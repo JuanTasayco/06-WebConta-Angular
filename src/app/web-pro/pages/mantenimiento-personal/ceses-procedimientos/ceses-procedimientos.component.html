@@ -1,0 +1,66 @@
+<p-fieldset legend="Cesar trabajadores" class="d-none d-md-block">
+    <p>
+        Es probable que se haya intentado cesar al trabajador directamente desde su ficha antes de insertar valores,
+        esto es un error. Ya que si se cesa antes, este no aparecerá en la planilla del mes. Pero también si no se hace
+        después, seguirá apareciendo en meses posteriores. 
+    </p>
+
+</p-fieldset>
+
+<p-divider align="left" type="dashed">
+    <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Panel Cese
+    </div>
+</p-divider>
+
+
+
+<p-scrollPanel class="p-4" [style]="{width: '100%', height: '550px'}" styleClass="custom" id="ceses">
+
+    <div class="contenido">
+        <h5 class="text-center"></h5>
+        <p class="text-center">Para agregar la fecha de cese a un trabajador ir a valores. </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ceses/1.1.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Una vez en valores dar doble clic al trabajador y colocar la fecha de cese y el motivo.
+            <small class="text-muted">No es necesario procesar nada, si en un caso el trabajador fue cesado meses
+                anteriores y sigue apareciendo aquí, eliminarlo con el ícono del lápiz de la parte superior izquierda.
+            </small>
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ceses/1.2.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+    </div>
+
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Posteriormente ir a ficha del trabajador, seleccionar al trabajador e ir a Datos del
+            empleo. En situación de trabajador indicar BAJA y colocar la fecha de CESE.
+        <small class="text-muted">Este procedimiento hace que el trabajador cesado no aparezca al mes siguiente. Para
+            verificar la fecha de cese es suficiente con ir al reporte de planilla y/o boleta.
+        </small></p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ceses/1.3.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+    </div>
+
+
+</p-scrollPanel>

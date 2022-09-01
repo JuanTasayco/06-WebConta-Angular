@@ -1,0 +1,56 @@
+<p-fieldset legend="Atento con el flujo correcto de modificación" class="d-none d-md-block" >
+    <p>
+        Recuerda que si modificas la ficha de un trabajador después de haber insertado valores, estos datos no se
+        actualizarán automáticamente. Puedes borrar el valor y volverlo a insertar en tabla de valores siempre y cuando
+        no hayas ingresado registros ya que se borrarán, lo recomendable es ajustar los valores manualmente.
+    </p>
+
+
+
+</p-fieldset>
+
+<p-divider align="left" type="dashed">
+    <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Panel Usuarios
+    </div>
+</p-divider>
+
+
+
+<p-scrollPanel class="p-4" [style]="{width: '100%', height: '550px'}" styleClass="custom" id="fichas-modificar">
+    <div class="contenido">
+        <h5 class="text-center">Modificar</h5>
+        <p class="text-center">Para modificar un trabajador debemos ir al panel de fichas de trabajadores</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/1.1.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Podemos realizar los cambios que creamos convenientes, recuerda guardar. Y de ser el caso
+            no encuentres información, como el cargo se lo puedes comunicar a un administrador</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Borrar-trabajadores/1.1.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Si al guardar encuentras errores, verificar el mensaje que aparece, pueden existir casos
+            de trabajadores migrados del sistema 1, que nunca han sido modificados hasta la fecha, un error es algo poco frecuente pero la posibilidad existe.</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Borrar-trabajadores/1.2.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+</p-scrollPanel>

@@ -1,0 +1,75 @@
+<p-fieldset legend="Horas Extras" class="d-none d-md-block">
+    <p>Para el calculo de horas extras, debe tener la jornada laboral del trabajador correctamente configurado en su
+        ficha, y además tienen que haber valores insertados.
+    </p>
+
+</p-fieldset>
+
+<p-divider align="left" type="dashed">
+    <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Panel HorExt
+    </div>
+</p-divider>
+
+
+<p-scrollPanel class="p-4" [style]="{width: '100%', height: '650px'}" styleClass="custom">
+    <div class="contenido">
+        <h5 class="text-center">Horas Extras</h5>
+        <p class="text-center">Para agregar horas extras ir a Registro, Rol de Horas Extras </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Registros/Horext/1horas.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">En la ventana de horas extras, ir al ícono de insertar en la parte superior izquierda. Se
+            abrirá una venta escoger al trabajador y dar clic en aceptar. </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Registros/Horext/2horas.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Normalmente las primeras columnas tendrían que salir con información, en caso no salga
+            colocar el sueldo bruto en el campo Remun. Afecta </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Registros/Horext/3horas.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center"> De izquierda a derecha, estos campos son 0.25, 0.35 y el doble. Agregar la información
+            de las horas, el cálculo es automático y los resultados empiezan a salir en el mismo orden en el lado derecho.</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Registros/Horext/4horas.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Ir a planilla mensual y procesar al trabajador, posteriormente verificar el monto de
+            horas extras recientemente agregados.</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Registros/Horext/5horas.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+
+
+
+
+</p-scrollPanel>

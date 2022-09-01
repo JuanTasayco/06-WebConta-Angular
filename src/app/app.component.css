@@ -1,0 +1,13 @@
+.Container-section{
+    background: url(../assets/bg-home.jpg);
+}
+
+
+.Container-h1{
+    max-width: 54rem;
+}
+
+
+.Container-img{
+    max-height: 3rem;
+}

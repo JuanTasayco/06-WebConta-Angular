@@ -1,0 +1,53 @@
+<p-fieldset legend="Renta 5ta" class="d-none d-md-block">
+    <p>La renta de 5ta no es un monto que vamos a modificar, esto lo hace únicamente el sistema de manera automática.
+        Existen formas para modificarla manualmente, pero no se recomienda, por lo tanto no se enseñará.
+    </p>
+
+</p-fieldset>
+
+<p-divider align="left" type="dashed">
+    <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Panel Renta
+    </div>
+</p-divider>
+
+
+<p-scrollPanel class="p-4" [style]="{width: '100%', height: '650px'}" styleClass="custom">
+    <div class="contenido">
+        <h5 class="text-center">Verificar renta de trabajadores </h5>
+        <p class="text-center">Vamos a Procesos/ calculo renta 5ta </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Registros/Reporte-renta/1renta.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Primero elegimos renta de quinta por personal, posteriormente a nuestro trabajador o a
+            todos si así lo deseamos y aceptamos</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Registros/Reporte-renta/2renta.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Aquí podemos visualizar la renta hasta el momento del trabajador, se puede exportar a
+            excel con las opciones de la parte superior.</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Registros/Reporte-renta/3renta.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+
+    
+</p-scrollPanel>

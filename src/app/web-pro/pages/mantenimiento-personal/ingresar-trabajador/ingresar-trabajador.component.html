@@ -1,0 +1,326 @@
+<p-fieldset legend="Ingresar trabajadores" class="d-none d-md-block">
+
+    <p>Antes de ingresar algún trabajador nuevo. Verificar si ya ha formado parte de la plantilla anteriormente,
+        recuerda que cuando un trabajador es cesado no se borra de manera permanente, solo va al contenedor de BAJAS.
+    </p>
+
+</p-fieldset>
+
+<p-divider align="left" type="dashed">
+    <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Panel Usuarios
+    </div>
+</p-divider>
+
+
+
+<p-scrollPanel class="p-4" [style]="{width: '100%', height: '550px'}" styleClass="custom" id="fichas-ingreso">
+
+
+    <!-- Section1 -->
+    <div class="contenido">
+        <h5 class="text-center">Verificar</h5>
+        <p class="text-center">Seleccionar la opción de trabajadores en el icono de la parte superior izquierda. </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/1.2.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Verificar trabajadores, para modificarlos solo debe dar doble clic al trabajador. De ser
+            necesario
+            filtrar su situación (activo, baja o todos)</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/1.1.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+
+    <!-- Section2 -->
+
+
+    <div class="contenido">
+        <p-divider align="center"></p-divider>
+        <h5 class="text-center">Agregar o Eliminar</h5>
+        <p class="text-center">Aquí se encuentran las opciones de agregar y eliminar trabajadores. Para agregar
+            trabajadores es
+            necesario darle añadir para ir a la nueva ficha, de lo contrario si es eliminar basta con seleccionar al
+            trabajador en la lista de trabajadores registrados en la parte inferior </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.1.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="center"></p-divider>
+        <p class="text-center">El software cuenta con multiples ventanas
+            para pasar
+            a la siguientes es necesario llenar la información obligatoria que esta marcada con * de lo contrario no
+            podrá pasar a la siguiente ventana. No es necesario llenar las ventanas de Datos familiares, Estudios, Otros
+            estudios y Prestadores de servicio.
+        </p>
+
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.4.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+
+
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="center">Datos generales</p-divider>
+        <p class="text-center">Si se agrega a un nuevo trabajador se debe colocar como código el Documento de identidad,
+            se debe
+            tener enfásis en este paso porque mediante este campo se realizan los filtros en procesos posteriores.</p>
+
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.2.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+    </div>
+
+
+    <div class="contenido">
+        <p-divider align="center"></p-divider>
+        <p class="text-center">Ahora en datos generales llenar los campos inferiores. Si hay información no especificada
+            como el
+            numero del interior se puede optar por usar el número 0,en caso de los nombres de vía y zona (colocar - - -
+            - - -)
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.3.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!--  -->
+
+    <div class="contenido">
+        <p-divider align="center">Datos del empleo</p-divider>
+        <p class="text-center"> En Datos del Empleo llenar la información del trabajador(si falta información relevante
+            no se
+            pasará a la siguiente ventana).
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.5.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+
+
+    </div>
+
+    <div class="contenido">
+        <p-divider align="center"></p-divider>
+        <p class="text-center">Si no cuenta la información Años a desc, Moneda,Porc Jud, entre otras, no son necesarios
+            rellenarlos, solo pasar a la siguiente sección.
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.5.1.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+
+
+    </div>
+
+
+    <!--  -->
+
+
+    <div class="contenido">
+        <p-divider align="center">Datos de Afiliación</p-divider>
+        <p class="text-center">En la siguiente ventana de afiliación elegir el tipo de trabajador y su regimen, tanto
+            para ONP como
+            para AFP es necesario una fecha de ingreso y se debe seguir llenando información en la parte inferior, a
+            excepción de Datos EPs y Datos Essalud.
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.6.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+
+        </div>
+
+
+
+    </div>
+    <div class="contenido">
+        <p-divider align="center"></p-divider>
+        <p class="text-center">Si existe un problema con los datos EPS.Se especifica con énfasis presionar ALT+255 en
+            datos de
+            ESSALUD-Número de Carnet, además en la parte inferior en Datos de EPS ( por más que no tenga)
+            colocar en situación ACTIVO O SUBSIDIDADO.
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.EPS-ERROR.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+
+
+    </div>
+
+
+    <!--  -->
+
+
+    <div class="contenido">
+        <p-divider align="center">Cuentas Bancarias</p-divider>
+        <p class="text-center">En Cuentas Bancarias indicar el banco al que pertenece en Deposito de planilla, si no
+            especifican
+            información dejar en blanco. No es necesario llenar la parte derecha Cuenta de CTS, aunque es recomendable.
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.7.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="contenido">
+        <p-divider align="center">Conceptos</p-divider>
+        <p class="text-center">En la ventana Conceptos se especifican los conceptos tanto de ingresos, descuentos y
+            aportes. Solo
+            se pueden modificar los valores en la parte de ingresos, los descuentos y los aportes son calculados por el
+            sistema.
+            <small class="text-muted"> Conceptos como Asignación familiar no son calculados por el sistema por lo tanto
+                indicar 93.00.</small>
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.8.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+
+        </div>
+
+
+
+    </div>
+    <div class="contenido">
+        <p-divider align="center">Horarios de trabajo</p-divider>
+        <p class="text-center">En horarios de trabajo especificar los días y las horas POR SEMANA no es necesario
+            especificar nada
+            en turno, ni agregar más información.
+        </p>
+
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.9.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Agregar información de Dias periodos y Horas por día. <small class="text-muted">Esta
+                parte es sumamente importante, de lo contrario no se calcularan horas extras, tardanzas o faltas
+            </small> </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.9.1.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="contenido">
+        <p-divider align="center">Contratos</p-divider>
+        <p class="text-center">Crear nuevo contrato en el siguiente ícono.
+        </p>
+
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.10.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Especificar la fecha de inicio, cargo y tipo contrato previamente insertada en la ventana
+            de datos del empleo y darle a aceptar.
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.10.1.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="center">Asignación/Sucursales</p-divider>
+        <p class="text-center"> Marcar ambas casillas ubicadas en Sucursales asignados y Sucursal principal, si sale un
+            error al guardar, volver a darle check a ambas, y guardar.
+        </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Mantenimiento-personal/Ingresar-trabajadores/2.11.png" alt="Image" width="250"
+                [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</p-scrollPanel>

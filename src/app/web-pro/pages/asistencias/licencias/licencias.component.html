@@ -1,0 +1,118 @@
+<p-fieldset legend="Licencias" class="d-none d-md-block">
+    <p>Las licencias y subsidios se llenan desde el mismo panel, y se colocan antes de la inserción de valores, si se
+        hace después, no se asignarán de manera automática después
+    </p>
+
+</p-fieldset>
+
+<p-divider align="left" type="dashed">
+    <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Panel Licencias
+    </div>
+</p-divider>
+
+
+<p-scrollPanel class="p-4" [style]="{width: '100%', height: '650px'}" styleClass="custom">
+    <div class="contenido">
+        <h5 class="text-center">Agregar Licencias </h5>
+        <p class="text-center">Dirigirse a Asistencia/licencias</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/1licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Una vez en la ventana de licencias ir al ícono de insertar.</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/2licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Escoger el trabajador y seleccionar la Licencia o el subsidio a tratar(esta parte es
+            la que será mostrada en los reportes de la planilla)</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/3licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Luego seleccionamos la licencia que está ligada a tablas paramétricas de la SUNAT, en
+            este caso de ejemplo usaremos una licencia sin goce que tiene el código 05.</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/4licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Elegir la fecha de inicio a fin, posteriormente
+            escoger si el concepto afecta a goce o no. No es necesario especificar nada en Datos
+            complementarios, presionar ACEPTAR</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/5licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Verificar las licencias agregadas previamente. </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/6licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Posteriormente nos dirigimos a valores </p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/7licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Reducir los días trabajados en base a los días de silencia sin goce, y aumentar el campo
+            de Dias LSG en base a estos también. EJM: Tiene 6 días de licencia sin goce, entonces reducimos 6 a el campo
+            DIAS y aumentamos 6 al campo DIAS LSG. <small class="text-lead">Si agregamos antes de insertar valores, no
+                es necesario modificar</small></p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/8licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <p-divider align="right"></p-divider>
+        <p class="text-center">Ir a planilla mensual, procesar al trabajador y verificar la información.</p>
+        <div class="d-flex justify-content-center">
+            <p-image src="assets/Asistencias/Licencias/10licencias.png" alt="Image" width="250" [preview]="true">
+                <ng-template pTemplate="indicator"><i class="pi pi-image" style="font-size: 2rem"></i></ng-template>
+            </p-image>
+        </div>
+    </div>
+
+
+
+
+</p-scrollPanel>
