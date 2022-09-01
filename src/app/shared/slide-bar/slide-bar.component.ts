@@ -20,20 +20,20 @@ export class SlideBarComponent implements OnInit {
         items: [{
           label: 'Valores',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'principal/valores',
+          routerLink: 'flujo-principal/valores',
           fragment: 'valores'
         },
         {
           label: 'Procesos',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'principal/procesos',
+          routerLink: 'flujo-principal/procesos',
           fragment: 'procesos'
         },
         { separator: true },
         {
           label: 'Reportes',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'principal/reportes',
+          routerLink: 'flujo-principal/reportes',
           fragment: 'reportes'
 
         }
@@ -51,14 +51,14 @@ export class SlideBarComponent implements OnInit {
               {
                 label: 'Ingresar trabajadores',
                 icon: 'pi pi-sort-amount-up-alt',
-                routerLink: 'mantenimiento/fichas/ingresar',
-                fragment: 'fichas-ingreso'
+                routerLink: 'mantenimiento-personal/ingresar',
+                fragment: 'ingresar-trabajador'
               },
               {
                 label: 'Modificar Trabajadores',
                 icon: 'pi pi-fw pi-trash',
-                routerLink: 'mantenimiento/fichas/modificar',
-                fragment: 'fichas-modificar'
+                routerLink: 'mantenimiento-personal/modificar',
+                fragment: 'modificar-trabajador'
               }
             ]
           },
@@ -69,7 +69,7 @@ export class SlideBarComponent implements OnInit {
             items: [{
               label: 'Procedimientos',
               icon: 'pi pi-pw pi-file',
-              routerLink: 'mantenimiento/ceses',
+              routerLink: 'mantenimiento-personal/ceses',
               fragment: 'ceses'
 
             }
@@ -124,8 +124,8 @@ export class SlideBarComponent implements OnInit {
         {
           label: 'Reporte Renta',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'registros/reportesRenta',
-          fragment: 'reportesRenta'
+          routerLink: 'registros/reporte-renta',
+          fragment: 'reporte-renta'
         },
 
         {
@@ -137,16 +137,16 @@ export class SlideBarComponent implements OnInit {
         {
           label: 'Otros ingresos',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'registros/otrosIngresos',
-          fragment: 'otrosIngresos'
+          routerLink: 'registros/otros-ingresos',
+          fragment: 'otros-ingresos'
 
         },
 
         {
           label: 'Otros conceptos',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'registros/Otrosconceptos'
-          , fragment: 'otrosConceptos'
+          routerLink: 'registros/otros-conceptos'
+          , fragment: 'otros-conceptos'
         },
         ]
 
@@ -160,6 +160,7 @@ export class SlideBarComponent implements OnInit {
             label: 'CTS',
             icon: 'pi pi-pw pi-file',
             routerLink: 'especiales/cts',
+            fragment: 'cts'
           },
           {
             label: 'Gratificación',
@@ -170,8 +171,8 @@ export class SlideBarComponent implements OnInit {
           {
             label: 'Renta externa',
             icon: 'pi pi-pw pi-file',
-            routerLink: 'especiales/rentaExterna',
-            fragment: 'rentaExterna'
+            routerLink: 'especiales/renta-externa',
+            fragment: 'renta-externa'
           }
 
         ]

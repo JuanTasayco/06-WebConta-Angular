@@ -1,4 +1,4 @@
-<p-fieldset legend="Atento con el flujo correcto de modificación" class="d-none d-md-block" >
+<p-fieldset legend="Atento con el flujo correcto de modificación" class="d-none d-md-block">
     <p>
         Recuerda que si modificas la ficha de un trabajador después de haber insertado valores, estos datos no se
         actualizarán automáticamente. Puedes borrar el valor y volverlo a insertar en tabla de valores siempre y cuando
@@ -8,7 +8,7 @@
 
 
 </p-fieldset>
-
+ 
 <p-divider align="left" type="dashed">
     <div class="inline-flex align-items-center">
         <i class="pi pi-user mr-2"></i> Panel Usuarios
@@ -17,7 +17,7 @@
 
 
 
-<p-scrollPanel class="p-4" [style]="{width: '100%', height: '550px'}" styleClass="custom" id="fichas-modificar">
+<p-scrollPanel class="p-4" [style]="{width: '100%', height: '550px'}" styleClass="custom" id="modificar-trabajador">
     <div class="contenido">
         <h5 class="text-center">Modificar</h5>
         <p class="text-center">Para modificar un trabajador debemos ir al panel de fichas de trabajadores</p>
@@ -44,7 +44,8 @@
     <div class="contenido">
         <p-divider align="right"></p-divider>
         <p class="text-center">Si al guardar encuentras errores, verificar el mensaje que aparece, pueden existir casos
-            de trabajadores migrados del sistema 1, que nunca han sido modificados hasta la fecha, un error es algo poco frecuente pero la posibilidad existe.</p>
+            de trabajadores migrados del sistema 1, que nunca han sido modificados hasta la fecha, un error es algo poco
+            frecuente pero la posibilidad existe.</p>
         <div class="d-flex justify-content-center">
             <p-image src="assets/Mantenimiento-personal/Borrar-trabajadores/1.2.png" alt="Image" width="250"
                 [preview]="true">

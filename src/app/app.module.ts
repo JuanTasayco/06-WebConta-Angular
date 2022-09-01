@@ -5,18 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgPrimeModule } from './ng-prime/ng-prime.module';
 import { SharedModule } from './shared/shared.module';
-import { WebProModule } from './web-pro/web-pro.module';
+import { PagesComponent } from './web-pro/pages/pages.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
-    WebProModule,
     NgPrimeModule
   ],
   providers: [],
