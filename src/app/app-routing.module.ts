@@ -6,16 +6,16 @@ import { PagesComponent } from './web-pro/pages/pages.component';
 const routerOptions: ExtraOptions = {
   anchorScrolling: "enabled",
   scrollPositionRestoration: "enabled",
+  scrollOffset: [0, 64]
+
 }
 
 
 const routes: Routes = [
 
   {
-    path:"",
-    component : PagesComponent,
-    pathMatch : 'full',
-  
+    path: "",
+    component: PagesComponent,
   },
 
   {
@@ -43,8 +43,6 @@ const routes: Routes = [
     path: "**",
     redirectTo: ""
   }
- 
-
 
 ];
 

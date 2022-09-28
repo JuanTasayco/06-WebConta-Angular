@@ -1,11 +1,13 @@
-<p-fieldset legend="Faltas" class="d-none d-md-block">
-    <p>Las faltas se agregan antes de la inserción de valores, recordar NO descontar dias de pago, solo el dato
+<p-fieldset [legend]="titulo" class="d-none d-md-block">
+    <p class="fieldset__p">Las faltas se agregan antes de la inserción de valores, recordar NO descontar dias de pago, solo el dato
         informativo
         del mes se reduce, ejemlo: Si tiene un día de falta, se le calcula en base a 30 días, no colocar 29 de lo
         contario se le descontará el doble
     </p>
 
 </p-fieldset>
+
+
 
 <p-divider align="left" type="dashed">
     <div class="inline-flex align-items-center">
@@ -16,6 +18,7 @@
 
 <p-scrollPanel class="p-4" [style]="{width: '100%', height: '650px'}" styleClass="custom" id="faltas">
     <div class="contenido">
+        <h5 class="text-center">Faltas</h5>
         <p class="text-center">Para registrar las faltas ir a Asistencia y Registro de faltas</p>
         <div class="d-flex justify-content-center">
             <p-image src="assets/Asistencias/Faltas/1faltas.png" alt="Image" width="250" [preview]="true">

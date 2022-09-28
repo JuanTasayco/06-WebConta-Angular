@@ -5,6 +5,7 @@ import { FaltasComponent } from './faltas/faltas.component';
 import { LicenciasComponent } from './licencias/licencias.component';
 import { VacacionesComponent } from './vacaciones/vacaciones.component';
 
+
 const routes: Routes = [
     {
         path: "",
@@ -23,7 +24,7 @@ const routes: Routes = [
             },
             {
                 path: "**",
-                redirectTo : "faltas"
+                redirectTo: "faltas"
             }
         ]
     }

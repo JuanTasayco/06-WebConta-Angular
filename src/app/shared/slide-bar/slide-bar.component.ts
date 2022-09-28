@@ -20,20 +20,20 @@ export class SlideBarComponent implements OnInit {
         items: [{
           label: 'Valores',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'flujo-principal/valores',
+          routerLink: '/flujo-principal',
           fragment: 'valores'
         },
         {
           label: 'Procesos',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'flujo-principal/procesos',
+          routerLink: '/flujo-principal/procesos',
           fragment: 'procesos'
         },
         { separator: true },
         {
           label: 'Reportes',
           icon: 'pi pi-pw pi-file',
-          routerLink: 'flujo-principal/reportes',
+          routerLink: '/flujo-principal/reportes',
           fragment: 'reportes'
 
         }
@@ -52,7 +52,8 @@ export class SlideBarComponent implements OnInit {
                 label: 'Ingresar trabajadores',
                 icon: 'pi pi-sort-amount-up-alt',
                 routerLink: 'mantenimiento-personal/ingresar',
-                fragment: 'ingresar-trabajador'
+                fragment: 'ingresar',
+              
               },
               {
                 label: 'Modificar Trabajadores',

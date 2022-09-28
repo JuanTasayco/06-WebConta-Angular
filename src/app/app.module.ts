@@ -7,12 +7,14 @@ import { NgPrimeModule } from './ng-prime/ng-prime.module';
 import { SharedModule } from './shared/shared.module';
 import { PagesComponent } from './web-pro/pages/pages.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InfoComponent } from './web-pro/components/info/info.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagesComponent
+    PagesComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

@@ -18,9 +18,9 @@ export class PagesComponent implements OnInit {
 
 
     this.events1 = [
-      { status: 'Mantenimiento de personal',step: 'mantenimiento/fichas/ingresar'}, { status: 'Asistencias' }, 
-      { status: 'Valores' } ,{ status: 'Ceses' } , { status: 'Registros' }, 
-      { status: 'Procesar planilla' }, { status: 'Reportes' } 
+      { status: 'Mantenimiento de personal', step: 'mantenimiento/fichas/ingresar' }, { status: 'Asistencias' },
+      { status: 'Valores' }, { status: 'Ceses' }, { status: 'Registros' },
+      { status: 'Procesar planilla' }, { status: 'Reportes' }
     ]
 
 
