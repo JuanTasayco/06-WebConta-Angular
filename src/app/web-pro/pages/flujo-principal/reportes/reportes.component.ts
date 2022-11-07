@@ -9,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ReportesComponent implements OnInit {
 
   constructor() { }
-
+  events2: any;
   ngOnInit(): void {
+    this.events2 = ["3.Valores","6.Procesos", "REPORTES"];
   }
 
 }
