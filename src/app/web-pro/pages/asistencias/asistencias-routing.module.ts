@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { FaltasComponent } from './faltas/faltas.component';
 import { LicenciasComponent } from './licencias/licencias.component';
+import { TardanzasComponent } from './tardanzas/tardanzas.component';
 import { VacacionesComponent } from './vacaciones/vacaciones.component';
 
 
@@ -21,6 +22,10 @@ const routes: Routes = [
             {
                 path: "vacaciones",
                 component: VacacionesComponent
+            },
+            {
+                path: "tardanzas",
+                component: TardanzasComponent
             },
             {
                 path: "**",

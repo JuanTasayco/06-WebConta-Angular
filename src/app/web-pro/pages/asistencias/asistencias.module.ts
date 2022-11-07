@@ -5,6 +5,9 @@ import { LicenciasComponent } from './licencias/licencias.component';
 import { FaltasComponent } from './faltas/faltas.component';
 import { NgPrimeModule } from 'src/app/ng-prime/ng-prime.module';
 import { AsistenciasRoutingModule } from './asistencias-routing.module';
+import { TardanzasComponent } from './tardanzas/tardanzas.component';
+import { ComponentsModule } from '../../components/components.module';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -12,11 +15,15 @@ import { AsistenciasRoutingModule } from './asistencias-routing.module';
   declarations: [
     VacacionesComponent,
     LicenciasComponent,
-    FaltasComponent
+    FaltasComponent,
+    TardanzasComponent
   ],
   imports: [
     NgPrimeModule,
-    AsistenciasRoutingModule
+    AsistenciasRoutingModule,
+    ComponentsModule,
+    CommonModule
+    
   ]
 })
 export class AsistenciasModule { }

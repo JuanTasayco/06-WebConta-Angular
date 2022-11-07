@@ -20,21 +20,21 @@ export class SlideBarComponent implements OnInit {
         items: [{
           label: 'Valores',
           icon: 'pi pi-pw pi-file',
-          routerLink: '/flujo-principal',
-          fragment: 'valores'
+          routerLink: 'flujo-principal/valores',
+
         },
         {
           label: 'Procesos',
           icon: 'pi pi-pw pi-file',
-          routerLink: '/flujo-principal/procesos',
-          fragment: 'procesos'
+          routerLink: 'flujo-principal/procesos',
+
         },
         { separator: true },
         {
           label: 'Reportes',
           icon: 'pi pi-pw pi-file',
-          routerLink: '/flujo-principal/reportes',
-          fragment: 'reportes'
+          routerLink: 'flujo-principal/reportes',
+
 
         }
         ]
@@ -52,14 +52,14 @@ export class SlideBarComponent implements OnInit {
                 label: 'Ingresar trabajadores',
                 icon: 'pi pi-sort-amount-up-alt',
                 routerLink: 'mantenimiento-personal/ingresar',
-                fragment: 'ingresar',
-              
+                fragment: "ingresar-trabajador"
+
               },
               {
                 label: 'Modificar Trabajadores',
                 icon: 'pi pi-fw pi-trash',
                 routerLink: 'mantenimiento-personal/modificar',
-                fragment: 'modificar-trabajador'
+
               }
             ]
           },
@@ -71,7 +71,7 @@ export class SlideBarComponent implements OnInit {
               label: 'Procedimientos',
               icon: 'pi pi-pw pi-file',
               routerLink: 'mantenimiento-personal/ceses',
-              fragment: 'ceses'
+
 
             }
 
@@ -90,21 +90,29 @@ export class SlideBarComponent implements OnInit {
           label: 'Vacaciones',
           icon: 'pi pi-pw pi-file',
           routerLink: 'asistencias/vacaciones',
-          fragment: 'vacaciones'
+
 
         },
         {
-          label: 'Licencias',
+          label: 'Licencias/Subsidios',
           icon: 'pi pi-pw pi-file',
           routerLink: 'asistencias/licencias',
-          fragment: 'licencias'
+
         },
 
         {
           label: 'Faltas',
           icon: 'pi pi-pw pi-file',
           routerLink: 'asistencias/faltas',
-          fragment: 'faltas'
+
+        },
+        {
+          label: 'Tardanzas',
+          icon: 'pi pi-pw pi-file',
+          routerLink: 'asistencias/tardanzas',
+
+
+
         }
         ]
 
@@ -119,27 +127,27 @@ export class SlideBarComponent implements OnInit {
           label: 'Horas Extras',
           icon: 'pi pi-pw pi-file',
           routerLink: 'registros/horext'
-          , fragment: 'horext'
+
 
         },
         {
           label: 'Reporte Renta',
           icon: 'pi pi-pw pi-file',
           routerLink: 'registros/reporte-renta',
-          fragment: 'reporte-renta'
+
         },
 
         {
           label: 'Adelantos',
           icon: 'pi pi-pw pi-file',
           routerLink: 'registros/adelantos'
-          , fragment: 'adelantos'
+
         },
         {
           label: 'Otros ingresos',
           icon: 'pi pi-pw pi-file',
           routerLink: 'registros/otros-ingresos',
-          fragment: 'otros-ingresos'
+
 
         },
 
@@ -147,7 +155,7 @@ export class SlideBarComponent implements OnInit {
           label: 'Otros conceptos',
           icon: 'pi pi-pw pi-file',
           routerLink: 'registros/otros-conceptos'
-          , fragment: 'otros-conceptos'
+
         },
         ]
 
@@ -161,23 +169,24 @@ export class SlideBarComponent implements OnInit {
             label: 'CTS',
             icon: 'pi pi-pw pi-file',
             routerLink: 'especiales/cts',
-            fragment: 'cts'
+            fragment: "cts"
           },
           {
             label: 'Gratificación',
             icon: 'pi pi-pw pi-file',
             routerLink: 'especiales/gratificacion'
-            , fragment: 'gratificacion'
+
           },
           {
             label: 'Renta externa',
             icon: 'pi pi-pw pi-file',
             routerLink: 'especiales/renta-externa',
-            fragment: 'renta-externa'
+
           }
 
         ]
       }
+
 
 
 

@@ -8,6 +8,7 @@ import { OtrosIngresosComponent } from './otros-ingresos/otros-ingresos.componen
 import { OtrosConceptosComponent } from './otros-conceptos/otros-conceptos.component';
 import { NgPrimeModule } from 'src/app/ng-prime/ng-prime.module';
 import { RegistrosRoutingModule } from './registros-routing.module';
+import { ComponentsModule } from '../../components/components.module';
 
 
 
@@ -21,7 +22,8 @@ import { RegistrosRoutingModule } from './registros-routing.module';
   ],
   imports: [
     NgPrimeModule,
-    RegistrosRoutingModule
+    RegistrosRoutingModule,
+    ComponentsModule
   ]
 })
 export class RegistrosModule { }

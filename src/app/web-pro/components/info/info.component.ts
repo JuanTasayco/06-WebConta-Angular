@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+
+import { AfterViewChecked, AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { delay, timeout } from 'rxjs';
+import { Info } from '../../interfaces/interfaces.component';
+import { WebProService } from '../../services/web-pro.service';
 
 @Component({
   selector: 'app-info',
@@ -6,14 +11,25 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class InfoComponent implements OnInit {
+export class InfoComponent implements OnInit, AfterViewInit {
 
-  titulo: any = "Faltas";
+  @Input() informacion!: Info;
+  @ViewChild("container", { static: false }) container!: ElementRef;
 
 
-  constructor() { }
 
-  ngOnInit(): void {
+
+
+  constructor(private route: ActivatedRoute,
+    private changeDetector: ChangeDetectorRef) {
   }
+  ngAfterViewInit(): void {
+
+    /*    console.log(this.container) */
+  }
+  ngOnInit(): void {
+    this.changeDetector.detectChanges();
+  }
+
 
 }

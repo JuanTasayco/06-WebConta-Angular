@@ -15,7 +15,7 @@ export class PagesComponent implements OnInit {
   events: any[] = [];
   dateSection = new Date().getFullYear();
   ngOnInit(): void {
-
+   
 
     this.events1 = [
       { status: 'Mantenimiento de personal', step: 'mantenimiento/fichas/ingresar' }, { status: 'Asistencias' },

@@ -1,12 +1,45 @@
-import { Component, OnInit } from '@angular/core';
+export interface Secciones {
+  asistencias: Asistencia[];
+  especiales: Especiales[];
+  mantenimientoPersonal: MantenimientoPersonal[];
+  registros: Registro[];
+}
 
-@Component({
-  selector: 'app-interfaces',
-  templateUrl: './interfaces.component.html',
+export interface Asistencia {
+  faltas?: Info;
+  tardanzas?: Info;
+  licencias?: Info;
+  vacaciones?: Info;
+}
 
-})
-export class InterfacesComponent  {
+export interface Info {
+  titulo: string;
+  subtitulo: string;
+  panel: string;
+  id: string;
+  contenido: Contenido[];
+}
 
-  constructor() { }
+export interface Contenido {
+  subtitles: string;
+  imagesUrl: string;
+}
 
+export interface Especiales {
+  cts?: Info;
+  gratificacion?: Info;
+  rentaExterna?: Info;
+}
+
+export interface MantenimientoPersonal {
+  modificar?: Info;
+  ceses?: Info;
+}
+
+export interface Registro {
+  adelantos?: Info;
+  horasExtras?: Info;
+  otrosConceptos?: Info;
+  otrosIngresos?: Info;
+  reporteRenta?: Info;
 }

@@ -1,1 +1,101 @@
-procesos
+<h2 class="Valores-h2 fs-3"></h2>
+<div class="Valores-title bg-light p-5 mt-3">
+    <h2 class="Valores-h2 Valores-h2--title fw-bold my-2">Procesos</h2>
+    <p class="fs-5 ">El panel de procesos recibe información de la tabla de valores, y además de las sección de
+        Registros, si existe un cambio en relación al cálculo, se debe ingresar a este panel que crea el esquema de
+        información para la planilla. </p>
+</div>
+
+<div class="Valores-banner px-5 my-4">
+    <p-timeline [value]="events2" layout="horizontal" align="alternate">
+        <ng-template pTemplate="content" let-event>
+            &#123;&#123;event&#125;&#125;
+        </ng-template>
+        <ng-template pTemplate="opposite" let-event>
+            &nbsp;
+        </ng-template>
+    </p-timeline>
+</div>
+
+<div class="Valores-content mt-5">
+    <h4 class="Valores-h4 px-3 fst-italic">Ir a la sección de procesos</h4>
+
+    <div class="Valores-section d-flex justify-content-center p-3">
+        <p-image src="assets/Flujo-principal/Valores/1.valores.png" class="img-fluid" alt="Image" width="100%"
+            [preview]="true">
+            <ng-template pTemplate="indicator">
+                Presiona para Ver
+            </ng-template>
+        </p-image>
+    </div>
+
+    <h4 class="Valores-h4 px-3 fst-italic mt-4">Existen 3 tipos de procesos</h4>
+    <div class="Valores-img d-flex flex-column align-items-center p-3 gap-4">
+        <div class="Valores-section text-center">
+            <h5 class="fst-italic">Procesar a todos</h5>
+            <p class="text-center">Procesa a todos los trabajadores disponibles en la tabla de valores</p>
+            <p-image src="assets/Flujo-principal/Valores/10.insert.png" alt="Image" width="100%" [preview]="true">
+                <ng-template pTemplate="indicator">
+                    Presiona para Ver
+                </ng-template>
+            </p-image>
+        </div>
+
+        <div class="Valores-section text-center">
+            <h5 class="fst-italic">Procesar personal individualmente</h5>
+            <p>Solo toma en cuenta a los trabajadores seleccionados en el panel Procesos</p>
+            <p-image src="assets/Flujo-principal/Valores/10.insert.png" alt="Image" width="100%" [preview]="true">
+                <ng-template pTemplate="indicator">
+                    Presiona para Ver
+                </ng-template>
+            </p-image>
+        </div>
+
+        <div class="Valores-section text-center">
+            <h5 class="fst-italic">Procesar personal pendiente</h5>
+            <p>Permite traer trabajadores que fueron ingresados a la tabla de valores después de ya haber procesado
+                trabajadores al menos una vez ( comunmente suele pasar con trabajadores nuevos que se ingresaron después
+                de insertar valores)</p>
+            <p-image src="assets/Flujo-principal/Valores/10.insert.png" alt="Image" width="100%" [preview]="true">
+                <ng-template pTemplate="indicator">
+                    Presiona para Ver
+                </ng-template>
+            </p-image>
+        </div>
+
+    </div>
+
+
+    <h4 class="Valores-h4 px-3 fst-italic border-bottom mt-5">Este pánel es muy es sensible</h4>
+
+    <div class="Valores-alert p-4 rounded-3 border mb-4 bg-light">
+        <figure class="Valores-figure">
+            <blockquote class="Valores-blockquote blockquote">
+                <p>Tener mucho cuidado al procesar</p>
+            </blockquote>
+            <figcaption class="Valores-figcaption blockquote-footer">
+                Si tenías que procesar a uno y procesaste a todos, es probable que se haya hecho más de un cambio.
+            </figcaption>
+        </figure>
+    </div>
+
+
+    <h4 class="Valores-h4 px-3 fst-italic border-bottom mt-2">Planilla Manual</h4>
+    <p>Planilla que permite realizar modificaciones especificas, limitada a algunos conceptos.</p>
+
+    <div class="Valores-description text-center">
+        <p-scrollPanel class="p-4 " [style]="{width: '100%', height: '700px'}" styleClass="custom">
+            <div class="contenido my-5" *ngFor="let valor of arrayProcesos">
+
+                <h5 class="Valores-h5">{{valor.title}}</h5>
+                <p class="Valores-p">{{valor.description}}</p>
+
+                <p-image [src]="valor.urlImage" alt="Image" width="600" [preview]="true">
+                    <ng-template pTemplate="indicator">
+                        Presiona para Ver
+                    </ng-template>
+                </p-image>
+                <p-divider align="right"></p-divider>
+            </div>
+        </p-scrollPanel>
+    </div>

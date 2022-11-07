@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Info, Registro } from 'src/app/web-pro/interfaces/interfaces.component';
+import { WebProService } from 'src/app/web-pro/services/web-pro.service';
 
 @Component({
   selector: 'app-reporte-renta',
@@ -8,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReporteRentaComponent implements OnInit {
 
-  constructor() { }
+  reporteRenta!: Info;
+
+  constructor(private webService: WebProService) { }
 
   ngOnInit(): void {
+    const name: string = "reporteRenta";
+    this.webService.getAll()
+      .subscribe(({ registros }) => {
+        for (let valor of registros) {
+          if (Object.keys(valor).includes(name)) { this.reporteRenta = valor.reporteRenta! }
+        }
+
+      })
   }
+
 
 }

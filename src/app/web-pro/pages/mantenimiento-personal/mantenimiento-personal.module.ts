@@ -5,6 +5,7 @@ import { ModificarTrabajadorComponent } from './modificar-trabajador/modificar-t
 import { CesesProcedimientosComponent } from './ceses-procedimientos/ceses-procedimientos.component';
 import { NgPrimeModule } from 'src/app/ng-prime/ng-prime.module';
 import { MantenimientoRoutingModule } from './mantenimiento-routing.module';
+import { ComponentsModule } from '../../components/components.module';
 
 
 
@@ -17,7 +18,8 @@ import { MantenimientoRoutingModule } from './mantenimiento-routing.module';
   imports: [
     CommonModule,
     NgPrimeModule,
-    MantenimientoRoutingModule
+    MantenimientoRoutingModule,
+    ComponentsModule
   ]
 })
 export class MantenimientoPersonalModule { }
