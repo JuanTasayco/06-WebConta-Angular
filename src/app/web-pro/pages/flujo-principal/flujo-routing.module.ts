@@ -24,12 +24,10 @@ const routes: Routes = [
 
             {
                 path: "**",
-                redirectTo: "procesos"
+                redirectTo: ""
             }
         ]
     }
-
-
 ];
 
 @NgModule({

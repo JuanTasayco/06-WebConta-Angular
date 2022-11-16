@@ -1,14 +1,25 @@
 .Container-section {
     background: url(../assets/bg-home.jpg);
+    padding: 10rem;
+
+}
+.Container-general{
+    height: 100%;
+}
+@media only screen and (max-width:570px) {
+    .Container-section {
+        padding: 4rem;
+    }
 }
 
 
-.Container-h1 {
+/* .Container-h1 {
     max-width: 54rem;
 }
+ */
 
-
-.Container-img {
+/* .Container-img {
     max-height: 3rem;
 }
+ */
 

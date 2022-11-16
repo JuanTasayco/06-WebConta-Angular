@@ -18,7 +18,8 @@ import { IdDirectiveDirective } from '../directives/id-directive.directive';
     RouterModule
   ],
   exports: [
-    InfoComponent
+    InfoComponent,
+    IdDirectiveDirective
   ]
 })
 export class ComponentsModule { }

@@ -15,14 +15,16 @@
     </header>
 
 
-    <section class="Container-section text-center p-5 rounded-3 mt-2">
+    <section class="Container-section text-center rounded-3 mt-2" #banner>
         <h1 class="Container-h1 display-4 fw-bold primary m-auto">Guía del Sistema de Contabilidad</h1>
         <p class="mt-3">Guías del sistema de contabilidad N°2 que pertenece a Julio</p>
     </section>
 
-    <!--  <section>
+
+
+    <section class="Container-advertisements">
         <div class="row">
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 mt-4" #funcional>
                 <div class="rounded-3 border shadow-sm d-flex flex-row">
                     <div class="content-text p-4">
                         <span class="text-primary fw-bold">Funcional</span>
@@ -40,7 +42,7 @@
             </div>
 
 
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 mt-4" #diseño>
                 <div class="rounded-3 border shadow-sm d-flex flex-row">
                     <div class="content-text p-4">
                         <span class="text-success fw-bold">Diseño</span>
@@ -57,7 +59,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <h3 class="mt-4 mb-4 px-1 fst-italic "> <a routerLink="" class="  p-2 rounded-3 ">Menú principal</a> </h3>
     <hr>
@@ -67,22 +69,15 @@
     <section>
         <div class="row ">
             <div class="col-md-4 order-md-last p-4">
-                <div>
+                <div class="d-flex">
                     <app-slide-bar></app-slide-bar>
-                    <a class="text-success">Problemas? preguntas más frecuentes</a>
+                    <!-- <a class="text-success">Problemas? preguntas más frecuentes</a> -->
                 </div>
-
             </div>
-            <div class="col-md-8 order-md-first mt-1">
+            <div class="col-md-8 order-md-first mt-1 h-100">
                 <router-outlet></router-outlet>
             </div>
-
-
         </div>
-
-
-
-
     </section>
 
 

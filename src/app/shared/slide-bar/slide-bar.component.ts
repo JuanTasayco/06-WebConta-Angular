@@ -27,7 +27,7 @@ export class SlideBarComponent implements OnInit {
           label: 'Procesos',
           icon: 'pi pi-pw pi-file',
           routerLink: 'flujo-principal/procesos',
-
+          fragment: "procesos"
         },
         { separator: true },
         {

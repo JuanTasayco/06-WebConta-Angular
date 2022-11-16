@@ -1,34 +1,24 @@
 
-import { AfterViewChecked, AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { delay, timeout } from 'rxjs';
+import { ChangeDetectionStrategy } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { Info } from '../../interfaces/interfaces.component';
-import { WebProService } from '../../services/web-pro.service';
 
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
-  styles: [
-  ]
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InfoComponent implements OnInit, AfterViewInit {
 
   @Input() informacion!: Info;
-  @ViewChild("container", { static: false }) container!: ElementRef;
+  @ViewChild("container") container!: ElementRef;
 
 
-
-
-
-  constructor(private route: ActivatedRoute,
-    private changeDetector: ChangeDetectorRef) {
+  constructor() {
   }
   ngAfterViewInit(): void {
-
-    /*    console.log(this.container) */
   }
   ngOnInit(): void {
-    this.changeDetector.detectChanges();
   }
 
 

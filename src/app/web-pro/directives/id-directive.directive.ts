@@ -1,21 +1,28 @@
-import { ThisReceiver } from '@angular/compiler';
-import { AfterViewInit, Directive, ElementRef, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, TitleStrategy, UrlSegment } from '@angular/router';
+
+import { AfterViewInit, Directive, ElementRef, HostListener, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Directive({
   selector: '[appIdDirective]'
 })
-export class IdDirectiveDirective implements OnInit, AfterViewInit {
+export class IdDirectiveDirective implements OnInit, AfterViewInit, OnDestroy {
 
-  constructor(private el: ElementRef<HTMLElement>) { }
+  constructor(private el: ElementRef<HTMLElement>, private route: Router) { }
+
   ngOnInit(): void { }
 
   ngAfterViewInit(): void {
+    console.log(this.el.nativeElement.getBoundingClientRect())
     this.el.nativeElement.scrollIntoView({
-      behavior: 'auto',
+      behavior: "smooth",
       block: "start"
     });
   }
 
+
+
+  ngOnDestroy(): void {
+
+  }
 
 }

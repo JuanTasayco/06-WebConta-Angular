@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { MenubarModule } from 'primeng/menubar';
 import { PanelMenuModule } from 'primeng/panelmenu';
@@ -13,12 +12,11 @@ import { ImageModule } from 'primeng/image';
 import { DividerModule } from 'primeng/divider';
 import { FieldsetModule } from 'primeng/fieldset';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
-import { BrowserModule } from '@angular/platform-browser';
+
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
     MenubarModule,
     PanelMenuModule,
     TimelineModule,

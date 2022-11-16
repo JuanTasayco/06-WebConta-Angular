@@ -1,15 +1,18 @@
-<ng-container *ngIf="informacion">
-    <p-fieldset [legend]="informacion.titulo" class="d-none d-md-block">
-        <p class="fieldset__p p-5">{{informacion.subtitulo}}</p>
-    </p-fieldset>
+<div *ngIf="informacion" appIdDirective>
+    <div class="Procesos-title bg-light p-5 mt-3" [id]="informacion.id" >
+        <h2 class="Procesos-h2 Procesos-h2--title fw-bold my-2">{{informacion.titulo}}</h2>
+        <p class="fs-5 ">{{informacion.subtitulo}} </p>
+    </div>
 
-    <p-divider align="left" type="dashed" appIdDirective>
+
+    <p-divider align="left" type="dashed">
+
         <div class="inline-flex align-items-center">
             <i class="pi pi-user mr-2"></i> {{informacion.panel}}
         </div>
     </p-divider>
     <p-scrollPanel class="p-4 " [style]="{width: '100%', height: '700px'}" styleClass="custom">
-        <!--650px  -->
+
 
         <h5 class="text-center">{{informacion.titulo}} </h5>
         <div class="contenido" *ngFor="let valor of informacion.contenido">
@@ -24,4 +27,4 @@
         </div>
 
     </p-scrollPanel>
-</ng-container>
+</div>

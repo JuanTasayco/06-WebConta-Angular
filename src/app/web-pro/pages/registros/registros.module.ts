@@ -21,7 +21,6 @@ import { ComponentsModule } from '../../components/components.module';
     OtrosConceptosComponent
   ],
   imports: [
-    NgPrimeModule,
     RegistrosRoutingModule,
     ComponentsModule
   ]

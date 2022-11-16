@@ -1,6 +1,6 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
 
@@ -13,6 +13,9 @@ export class MenuBarComponent implements OnInit {
   items: MenuItem[] = [];
 
   constructor() { }
+
+
+
   ngOnInit(): void {
 
     this.items = [
@@ -31,12 +34,10 @@ export class MenuBarComponent implements OnInit {
           routerLink: 'flujo-principal/procesos',
 
         },
-        { separator: true },
         {
           label: 'Reportes',
           icon: 'pi pi-pw pi-file',
           routerLink: 'flujo-principal/reportes',
-
 
         }
         ]
@@ -73,7 +74,7 @@ export class MenuBarComponent implements OnInit {
               label: 'Procedimientos',
               icon: 'pi pi-pw pi-file',
               routerLink: 'mantenimiento-personal/ceses',
-        
+
 
             }
 
@@ -171,7 +172,7 @@ export class MenuBarComponent implements OnInit {
             label: 'CTS',
             icon: 'pi pi-pw pi-file',
             routerLink: 'especiales/cts',
-            fragment:"cts"
+
           },
           {
             label: 'Gratificación',

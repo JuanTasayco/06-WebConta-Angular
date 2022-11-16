@@ -15,7 +15,6 @@ import { ComponentsModule } from '../../components/components.module';
     RentaExternaComponent
   ],
   imports: [
-    NgPrimeModule,
     EspecialesRoutingModule,
     ComponentsModule
   ]

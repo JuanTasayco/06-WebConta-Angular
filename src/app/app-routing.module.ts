@@ -6,8 +6,7 @@ import { PagesComponent } from './web-pro/pages/pages.component';
 const routerOptions: ExtraOptions = {
   anchorScrolling: "enabled",
   scrollPositionRestoration: "enabled",
-  scrollOffset: [0, 64]
-
+  scrollOffset: [0, 60]
 }
 
 
