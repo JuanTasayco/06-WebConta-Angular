@@ -17,10 +17,10 @@ export class AppComponent implements AfterViewInit {
 
     const time = gsap.timeline({ repeat: 0, yoyo: false })
 
-    gsap.from(this.banner.nativeElement, { opacity: 0, duration: 2 })
+    time.from(this.banner.nativeElement, { opacity: 0, duration: .5 })
 
     this.sections.forEach((element) => {
-      gsap.from(element.nativeElement, {
+      time.from(element.nativeElement, {
         opacity: 0,
         ease: "none"
       })

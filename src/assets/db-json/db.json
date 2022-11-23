@@ -74,8 +74,8 @@
         },
         {
             "licencias": {
-                "titulo": "Licencias",
-                "subtitulo": "Las licencias y subsidios se llenan desde el mismo panel, y se colocan antes de la inserción de valores, si se hace después, no se asignarán de manera automática después",
+                "titulo": "Licencias / Subsidios",
+                "subtitulo": "Las licencias y subsidios se llenan desde el mismo panel, y se colocan antes de la inserción de valores, si se hace después, no se asignarán de manera automática, se tendrá que hacer manualmente",
                 "panel": "Panel Licencias",
                 "id": "licencias",
                 "contenido": [
@@ -110,6 +110,11 @@
                     {
                         "subtitles": "Reducir los días trabajados en base a los días de silencia sin goce, y aumentar el campo de Dias LSG en base a estos también. EJM: Tiene 6 días de licencia sin goce, entonces reducimos 6 a el campo DIAS y aumentamos 6 al campo DIAS LSG.Si agregamos antes de insertar valores, no es necesario modificar",
                         "imagesUrl": "assets/Asistencias/Licencias/8licencias.png"
+                    },
+
+                    {
+                        "subtitles": "Lo mismo sucede si tenemos un subsidio, para evitar tener el rojo la planilla, debemos mandar los campos de subsidio a 0 y acomodar los días respectivamente en los demás campos.",
+                        "imagesUrl": "assets/Asistencias/Licencias/8subsidio.png"
                     },
                     {
                         "subtitles": "Ir a planilla mensual, procesar al trabajador y verificar la información.",
