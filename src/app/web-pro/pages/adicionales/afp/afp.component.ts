@@ -29,7 +29,7 @@ export class AfpComponent implements OnInit {
 
   conLiquidacion: Flujo[] = [
     {
-      title: 'Obten la información a llenar (subsidio o liquidación)',
+      title: 'Obten la información a llenar (liquidación)',
       description:
         'Revisa el cuadro de liquidaciones y obten el monto a colocar. Si no te lo indican aquí puedes revisar la hoja subsidio personal que debe ser enviada justo al correo.',
       urlImage: 'assets/Adicionales/afp/2.1.verificar.png',
@@ -70,7 +70,34 @@ export class AfpComponent implements OnInit {
     },
   ];
 
-  eliminarLiquidaciones: Flujo[] = [];
+  eliminarLiquidaciones: Flujo[] = [
+    {
+      title: 'Dirigite a Listado',
+      description:
+        'Este panel está justo debajo de la opción para agregar ingresos variables(donde ingresaste la liquidación)',
+      urlImage: 'assets/Adicionales/afp/3.1.irEliminarLiqui.png',
+    },
+
+    {
+      title: 'Eliminar la vacacion trunca.',
+      description:
+        'Busca al trabajador, dale un check y presiona el botón de eliminar, esto le quitará el monto agregado',
+      urlImage: 'assets/Adicionales/afp/3.2.eliminarLiqui.png',
+    },
+
+    {
+      title: 'Dirigete al panel de procesos',
+      description: 'Ahora necesitas ir nuevamente a procesos, para procesar.',
+      urlImage: 'assets/Adicionales/afp/2.4.IrProcesos.png',
+    },
+
+    {
+      title: 'Procesa al trabajador.',
+      description:
+        'Recuerda solo procesar al trabajador que tuvo la liquidación, en este caso selecciona el check y presiona el botón superior (procesar)',
+      urlImage: 'assets/Adicionales/afp/2.5.procesar.png',
+    },
+  ];
 
   sinSubsidio: Flujo[] = [
     {
@@ -88,7 +115,32 @@ export class AfpComponent implements OnInit {
     },
   ];
 
-  conSubsidio: Flujo[] = [];
+  conSubsidio: Flujo[] = [
+    {
+      title: 'Obten la información a llenar (subsidio)',
+      description:
+        'Revisa el cuadro de liquidaciones y obten el monto a colocar. Si no te lo indican aquí puedes revisar la hoja subsidio personal que debe ser enviada justo al correo.',
+      urlImage: 'assets/Adicionales/afp/2.1.verificar.png',
+    },
+    {
+      title: 'En caso sea subsidio',
+      description: 'Dirigirse a al panel de valores.',
+      urlImage: 'assets/Adicionales/afp/2.2.IrLiquidacion.png',
+    },
+    {
+      title: 'Elige la celda dependiendo tu subsidio y coloca los días. ',
+      description:
+        'Depende si el subsidio es por maternidad o enfermedad para saber que celda llenar, recuerda que todo debe sumar 30 días, si tienes 15 días trabajados o vacaciones, por obviedad solo tendrá 15 días disponibles para un subsidio.',
+      urlImage: 'assets/Adicionales/afp/2.2.IrLiquidacion.png',
+    },
+
+    {
+      title: 'Revisa la ficha del trabajador.',
+      description:
+        'El concepto de subsidio por maternidad tiene que estar agregado en la ficha del trabajador también',
+      urlImage: 'assets/Adicionales/afp/2.2.IrLiquidacion.png',
+    },
+  ];
 
   eliminarSubsidio: Flujo[] = [];
 
