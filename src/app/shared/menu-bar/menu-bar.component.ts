@@ -146,7 +146,7 @@ export class MenuBarComponent implements OnInit {
 
       {
         label: 'Especiales',
-        icon: 'pi pi-check',
+        icon: 'pi pi-star',
         items: [
           {
             label: 'CTS',
@@ -162,6 +162,22 @@ export class MenuBarComponent implements OnInit {
             label: 'Renta externa',
             icon: 'pi pi-pw pi-file',
             routerLink: 'especiales/renta-externa',
+          },
+        ],
+      },
+      {
+        label: 'Adicionales',
+        icon: 'pi pi-plus',
+        items: [
+          {
+            label: 'AFP',
+            icon: 'pi pi-pw pi-file',
+            routerLink: 'adicionales/afp',
+          },
+          {
+            label: 'Plame',
+            icon: 'pi pi-pw pi-file',
+            routerLink: 'adicionales/plame',
           },
         ],
       },

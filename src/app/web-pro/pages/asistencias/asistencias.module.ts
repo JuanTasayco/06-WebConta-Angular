@@ -19,7 +19,6 @@ import { CommonModule } from '@angular/common';
     TardanzasComponent
   ],
   imports: [
-
     AsistenciasRoutingModule,
     ComponentsModule,
     CommonModule
