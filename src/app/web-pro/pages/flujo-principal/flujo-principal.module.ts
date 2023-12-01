@@ -8,6 +8,8 @@ import { FlujoRoutingModule } from './flujo-routing.module';
 
 import { CommonModule } from '@angular/common';
 import { ComponentsModule } from '../../components/components.module';
+import { PeriodosComponent } from './periodos/periodos.component';
+import { SelectColegioComponent } from './select-colegio/select-colegio.component';
 
 
 
@@ -16,7 +18,9 @@ import { ComponentsModule } from '../../components/components.module';
   declarations: [
     ValoresComponent,
     ProcesosComponent,
-    ReportesComponent
+    ReportesComponent,
+    PeriodosComponent,
+    SelectColegioComponent
 
   ],
   imports: [
