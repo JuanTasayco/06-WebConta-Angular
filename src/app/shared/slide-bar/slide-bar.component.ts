@@ -17,26 +17,31 @@ export class SlideBarComponent implements OnInit {
       {
         label: 'Flujo Principal',
         icon: 'pi pi-sitemap',
-        items: [{
+        items: [   {
+          label: 'Seleccionar Colegio',
+          icon: 'pi pi-pw pi-file',
+          routerLink: 'flujo-principal/inicio',
+        },
+        {
+          label: 'Periodos',
+          icon: 'pi pi-pw pi-file',
+          routerLink: 'flujo-principal/periodos',
+        },
+        {
           label: 'Valores',
           icon: 'pi pi-pw pi-file',
           routerLink: 'flujo-principal/valores',
-
         },
         {
           label: 'Procesos',
           icon: 'pi pi-pw pi-file',
           routerLink: 'flujo-principal/procesos',
-          fragment: "procesos"
         },
-        { separator: true },
         {
           label: 'Reportes',
           icon: 'pi pi-pw pi-file',
           routerLink: 'flujo-principal/reportes',
-
-
-        }
+        },
         ]
       },
 
