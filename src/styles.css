@@ -1,29 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
 .fade-in {
-    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-body{
-   
-}
+/* .p-scrollpanel {
+  &.custombar1 {
+    .p-scrollpanel-wrapper {
+      border-right: 9px solid var(--layer-1);
+    }
+
+    .p-scrollpanel-bar {
+      background-color: #8ec5fc;
+      background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+
+      opacity: 1;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #007ad9;
+      }
+    }
+  }
+
+  &.custombar2 {
+    .p-scrollpanel-wrapper {
+      border-right: 9px solid var(--layer-1);
+      border-bottom: 9px solid var(--layer-1);
+    }
+
+    .p-scrollpanel-bar {
+      background-color: var(--layer-2);
+      border-radius: 0;
+      opacity: 1;
+      transition: background-color 0.2s;
+    }
+  }
+} */

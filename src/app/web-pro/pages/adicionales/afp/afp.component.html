@@ -23,7 +23,7 @@
       <p-scrollPanel
         class="p-4"
         [style]="{ width: '100%', height: '700px' }"
-        styleClass="custom"
+        styleClass="custombar1"
       >
         <div class="contenido my-5" *ngFor="let valor of situacionesArray">
           <h5 class="Procesos-h5">{{ valor.title }}</h5>
@@ -42,8 +42,22 @@
       </p-scrollPanel>
     </div>
 
+    <!-- alert -->
+    <div class="Procesos-alert p-4 rounded-3 border mb-4 bg-light">
+      <figure class="Procesos-figure">
+        <blockquote class="Procesos-blockquote blockquote">
+          <p>Vamos a darle una solución a ambos casos</p>
+        </blockquote>
+        <figcaption class="Procesos-figcaption blockquote-footer">
+          Cabe recalcar que si ya se entiende como exportar un archivo afp con
+          subsidio, cuando toca realizar un proceso sin esto, practicamente es
+          pan comido.
+        </figcaption>
+      </figure>
+    </div>
+
     <!-- section 2 -->
-    <h4 class="Procesos-h4 px-3 fst-italic">Solución con subsidios</h4>
+    <h4 class="Procesos-h4 px-3 fst-italic">Solución con liquidaciones</h4>
 
     <div class="Procesos-description text-center">
       <p-scrollPanel
@@ -51,7 +65,7 @@
         [style]="{ width: '100%', height: '700px' }"
         styleClass="custom"
       >
-        <div class="contenido my-5" *ngFor="let valor of arrayProcesos">
+        <div class="contenido my-5" *ngFor="let valor of conLiquidacion">
           <h5 class="Procesos-h5">{{ valor.title }}</h5>
           <p class="Procesos-p">{{ valor.description }}</p>
 
@@ -67,39 +81,109 @@
         </div>
       </p-scrollPanel>
     </div>
-    <!--     <div class="Procesos-section d-flex justify-content-center p-3">
-      <p-image
-        src="assets/Adicionales/afp/impuestos.png"
-        class="img-fluid"
-        alt="Image"
-        width="100%"
-        [preview]="true"
-      >
-        <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>x
-      </p-image>
-    </div> -->
 
+    <!-- delete liquidaciones  -->
+    <h4 class="Procesos-h4 px-3 fst-italic">Eliminar liquidaciones</h4>
+    <div class="Procesos-description text-center">
+      <p-scrollPanel
+        class="p-4"
+        [style]="{ width: '100%', height: '700px' }"
+        styleClass="custombar1"
+      >
+        <div class="contenido my-5" *ngFor="let valor of eliminarLiquidaciones">
+          <h5 class="Procesos-h5">{{ valor.title }}</h5>
+          <p class="Procesos-p">{{ valor.description }}</p>
+
+          <p-image
+            [src]="valor.urlImage"
+            alt="Image"
+            width="600"
+            [preview]="true"
+          >
+            <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>
+          </p-image>
+          <p-divider align="right"></p-divider>
+        </div>
+      </p-scrollPanel>
+    </div>
+
+    <!-- con subsidio-->
+    <h4 class="Procesos-h4 px-3 fst-italic">Solución con subsidios</h4>
+
+    <div class="Procesos-description text-center">
+      <p-scrollPanel
+        class="p-4"
+        [style]="{ width: '100%', height: '700px' }"
+        styleClass="custom"
+      >
+        <div class="contenido my-5" *ngFor="let valor of conSubsidio">
+          <h5 class="Procesos-h5">{{ valor.title }}</h5>
+          <p class="Procesos-p">{{ valor.description }}</p>
+
+          <p-image
+            [src]="valor.urlImage"
+            alt="Image"
+            width="600"
+            [preview]="true"
+          >
+            <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>
+          </p-image>
+          <p-divider align="right"></p-divider>
+        </div>
+      </p-scrollPanel>
+    </div>
+
+    <!--  -->
+
+    <h4 class="Procesos-h4 px-3 fst-italic">Eliminar subsidios</h4>
+
+    <div class="Procesos-description text-center">
+      <p-scrollPanel
+        class="p-4"
+        [style]="{ width: '100%', height: '700px' }"
+        styleClass="custom"
+      >
+        <div class="contenido my-5" *ngFor="let valor of eliminarSubsidio">
+          <h5 class="Procesos-h5">{{ valor.title }}</h5>
+          <p class="Procesos-p">{{ valor.description }}</p>
+
+          <p-image
+            [src]="valor.urlImage"
+            alt="Image"
+            width="600"
+            [preview]="true"
+          >
+            <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>
+          </p-image>
+          <p-divider align="right"></p-divider>
+        </div>
+      </p-scrollPanel>
+    </div>
+
+    <!--  -->
     <h4 class="Procesos-h4 px-3 fst-italic border-bottom mt-5">
-      Recuerda que aquí también se agrega la fecha de boletas
+      Recuerdales que sigan el flujo, Planillas - Afp - Plames
     </h4>
 
     <div class="Procesos-alert p-4 rounded-3 border mb-4 bg-light">
       <figure class="Procesos-figure">
         <blockquote class="Procesos-blockquote blockquote">
-          <p>Solo necesitas estar en el periodo y mes que deseas</p>
+          <p>No seguir el flujo de entrega puede generar problemas.</p>
         </blockquote>
         <figcaption class="Procesos-figcaption blockquote-footer">
-          Solo basta con colocar la fecha en la columna llamada Fecha de pago.
+          Recuerda que si agregaste una liquidación o subsidio la planilla
+          quedará diferente, es decir si necesitan un reporte de planillas,
+          tendrás que quitar lo agregado para que se genere.
         </figcaption>
       </figure>
     </div>
 
     <h4 class="Procesos-h4 px-3 fst-italic border-bottom mt-2">
-      Selección de periodo
+      Solución sin subsidio o liquidación.
     </h4>
     <p>
-      Recuerda seguir al pie de la letra las pautas para cada tipo de periodo
-      disponible. Mensual, Gratificación y CTS.
+      Es practicamente repetir los últimos pasos de la guía con subsidio o
+      liquidación
     </p>
 
     <div class="Procesos-description text-center">
@@ -108,7 +192,7 @@
         [style]="{ width: '100%', height: '700px' }"
         styleClass="custom"
       >
-        <div class="contenido my-5" *ngFor="let valor of arrayProcesos">
+        <div class="contenido my-5" *ngFor="let valor of sinSubsidio">
           <h5 class="Procesos-h5">{{ valor.title }}</h5>
           <p class="Procesos-p">{{ valor.description }}</p>
 
