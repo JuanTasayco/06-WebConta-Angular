@@ -1,1 +1,67 @@
-<app-info [informacion]="licencias"></app-info>
+<div class="d-flex flex-column gap-5">
+  <app-info [informacion]="licencias"></app-info>
+
+  <!-- delete subsidio -->
+  <div class="border-top pt-3">
+    <h4 class="Procesos-h4 px-3 fst-italic">Eliminar subsidios</h4>
+    <p-divider align="left" type="dashed">
+      <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Elimina un subsidio
+      </div>
+    </p-divider>
+    <div class="Procesos-description text-center">
+      <p-scrollPanel
+        class="p-4"
+        [style]="{ width: '100%', height: '700px' }"
+        styleClass="custom"
+      >
+        <div class="contenido my-5" *ngFor="let valor of eliminarSubsidio">
+          <h5 class="Procesos-h5">{{ valor.title }}</h5>
+          <p class="Procesos-p">{{ valor.description }}</p>
+
+          <p-image
+            [src]="valor.urlImage"
+            alt="Image"
+            width="600"
+            [preview]="true"
+          >
+            <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>
+          </p-image>
+          <p-divider align="right"></p-divider>
+        </div>
+      </p-scrollPanel>
+    </div>
+  </div>
+
+  <!-- delete liquidacion -->
+  <div class="border-top pt-3">
+    <h4 class="Procesos-h4 px-3 fst-italic">Eliminar liquidaciones</h4>
+    <p-divider align="left" type="dashed">
+      <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Elininar una liquidación
+      </div>
+    </p-divider>
+    <div class="Procesos-description text-center">
+      <p-scrollPanel
+        class="p-4"
+        [style]="{ width: '100%', height: '700px' }"
+        styleClass="custombar1"
+      >
+        <div class="contenido my-5" *ngFor="let valor of eliminarLiquidaciones">
+          <h5 class="Procesos-h5">{{ valor.title }}</h5>
+          <p class="Procesos-p">{{ valor.description }}</p>
+
+          <p-image
+            [src]="valor.urlImage"
+            alt="Image"
+            width="600"
+            [preview]="true"
+          >
+            <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>
+          </p-image>
+          <p-divider align="right"></p-divider>
+        </div>
+      </p-scrollPanel>
+    </div>
+  </div>
+</div>

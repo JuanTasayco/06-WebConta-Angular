@@ -19,6 +19,12 @@
   <div class="Procesos-content mt-5">
     <!-- section 1 -->
     <h4 class="Procesos-h4 px-3 fst-italic">Existen dos situaciones</h4>
+    <p-divider align="left" type="dashed">
+      <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> AFP con y sin subsidios y/o
+        liquidaciones
+      </div>
+    </p-divider>
     <div class="Procesos-description text-center">
       <p-scrollPanel
         class="p-4"
@@ -58,7 +64,11 @@
 
     <!-- section 2 -->
     <h4 class="Procesos-h4 px-3 fst-italic">Solución con liquidaciones</h4>
-
+    <p-divider align="left" type="dashed">
+      <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Existe Liquidación
+      </div>
+    </p-divider>
     <div class="Procesos-description text-center">
       <p-scrollPanel
         class="p-4"
@@ -83,33 +93,14 @@
     </div>
 
     <!-- delete liquidaciones  -->
-    <h4 class="Procesos-h4 px-3 fst-italic">Eliminar liquidaciones</h4>
-    <div class="Procesos-description text-center">
-      <p-scrollPanel
-        class="p-4"
-        [style]="{ width: '100%', height: '700px' }"
-        styleClass="custombar1"
-      >
-        <div class="contenido my-5" *ngFor="let valor of eliminarLiquidaciones">
-          <h5 class="Procesos-h5">{{ valor.title }}</h5>
-          <p class="Procesos-p">{{ valor.description }}</p>
-
-          <p-image
-            [src]="valor.urlImage"
-            alt="Image"
-            width="600"
-            [preview]="true"
-          >
-            <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>
-          </p-image>
-          <p-divider align="right"></p-divider>
-        </div>
-      </p-scrollPanel>
-    </div>
 
     <!-- con subsidio-->
     <h4 class="Procesos-h4 px-3 fst-italic">Solución con subsidios</h4>
-
+    <p-divider align="left" type="dashed">
+      <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Agregar un subsidio para AFP.
+      </div>
+    </p-divider>
     <div class="Procesos-description text-center">
       <p-scrollPanel
         class="p-4"
@@ -135,32 +126,6 @@
 
     <!--  -->
 
-    <h4 class="Procesos-h4 px-3 fst-italic">Eliminar subsidios</h4>
-
-    <div class="Procesos-description text-center">
-      <p-scrollPanel
-        class="p-4"
-        [style]="{ width: '100%', height: '700px' }"
-        styleClass="custom"
-      >
-        <div class="contenido my-5" *ngFor="let valor of eliminarSubsidio">
-          <h5 class="Procesos-h5">{{ valor.title }}</h5>
-          <p class="Procesos-p">{{ valor.description }}</p>
-
-          <p-image
-            [src]="valor.urlImage"
-            alt="Image"
-            width="600"
-            [preview]="true"
-          >
-            <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>
-          </p-image>
-          <p-divider align="right"></p-divider>
-        </div>
-      </p-scrollPanel>
-    </div>
-
-    <!--  -->
     <h4 class="Procesos-h4 px-3 fst-italic border-bottom mt-5">
       Recuerdales que sigan el flujo, Planillas - Afp - Plames
     </h4>
@@ -181,10 +146,11 @@
     <h4 class="Procesos-h4 px-3 fst-italic border-bottom mt-2">
       Solución sin subsidio o liquidación.
     </h4>
-    <p>
-      Es practicamente repetir los últimos pasos de la guía con subsidio o
-      liquidación
-    </p>
+    <p-divider align="left" type="dashed">
+      <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> El proceso de solo sacar los reportes
+      </div>
+    </p-divider>
 
     <div class="Procesos-description text-center">
       <p-scrollPanel

@@ -9,20 +9,18 @@ import { TardanzasComponent } from './tardanzas/tardanzas.component';
 import { ComponentsModule } from '../../components/components.module';
 import { CommonModule } from '@angular/common';
 
-
-
 @NgModule({
   declarations: [
     VacacionesComponent,
     LicenciasComponent,
     FaltasComponent,
-    TardanzasComponent
+    TardanzasComponent,
   ],
   imports: [
     AsistenciasRoutingModule,
     ComponentsModule,
-    CommonModule
-    
-  ]
+    CommonModule,
+    NgPrimeModule,
+  ],
 })
-export class AsistenciasModule { }
+export class AsistenciasModule {}
