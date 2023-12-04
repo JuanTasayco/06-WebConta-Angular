@@ -186,7 +186,7 @@ export class AfpComponent implements OnInit {
     {
       title: 'Elige la celda dependiendo el tipo de subsidio.',
       description:
-        'Existen dos casillas, por enfermedad y maternidad, coloca los días en base al tipo de subsidio indicado,recuerda que todo debe sumar 30 días, si tienes 15 días trabajados o vacaciones, por obviedad solo tendrá 15 días disponibles para un subsidio. ',
+        'Existen dos casillas, por enfermedad y maternidad, coloca los días en base al tipo de subsidio indicado,recuerda que todo debe sumar 30 días, si tienes 15 días trabajados o vacaciones, por obviedad solo tendrá 15 días disponibles para un subsidio. No olvides guardar.',
       urlImage: 'assets/Adicionales/afp/4.1.colocarSubsidio.png',
     },
     {
