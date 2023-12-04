@@ -25,11 +25,11 @@
         liquidaciones
       </div>
     </p-divider>
-    <div class="Procesos-description text-center">
+    <div class="Procesos-description text-center rounded-3 shadow-sm">
       <p-scrollPanel
         class="p-4"
         [style]="{ width: '100%', height: '700px' }"
-        styleClass="custombar1"
+        styleClass="custom"
       >
         <div class="contenido my-5" *ngFor="let valor of situacionesArray">
           <h5 class="Procesos-h5">{{ valor.title }}</h5>
@@ -49,7 +49,7 @@
     </div>
 
     <!-- alert -->
-    <div class="Procesos-alert p-4 rounded-3 border mb-4 bg-light">
+    <div class="Procesos-alert p-4 rounded-3 border my-4 bg-light">
       <figure class="Procesos-figure">
         <blockquote class="Procesos-blockquote blockquote">
           <p>Vamos a darle una solución a ambos casos</p>
@@ -69,11 +69,11 @@
         <i class="pi pi-user mr-2"></i> Existe Liquidación
       </div>
     </p-divider>
-    <div class="Procesos-description text-center">
+    <div class="Procesos-description text-center shadow-sm">
       <p-scrollPanel
         class="p-4"
         [style]="{ width: '100%', height: '700px' }"
-        styleClass="custom"
+          styleClass="custom"
       >
         <div class="contenido my-5" *ngFor="let valor of conLiquidacion">
           <h5 class="Procesos-h5">{{ valor.title }}</h5>
@@ -95,13 +95,13 @@
     <!-- delete liquidaciones  -->
 
     <!-- con subsidio-->
-    <h4 class="Procesos-h4 px-3 fst-italic">Solución con subsidios</h4>
+    <h4 class="Procesos-h4 px-3 fst-italic mt-5">Solución con subsidios</h4>
     <p-divider align="left" type="dashed">
       <div class="inline-flex align-items-center">
         <i class="pi pi-user mr-2"></i> Agregar un subsidio para AFP.
       </div>
     </p-divider>
-    <div class="Procesos-description text-center">
+    <div class="Procesos-description text-center shadow-sm">
       <p-scrollPanel
         class="p-4"
         [style]="{ width: '100%', height: '700px' }"
@@ -143,7 +143,7 @@
       </figure>
     </div>
 
-    <h4 class="Procesos-h4 px-3 fst-italic border-bottom mt-2">
+    <h4 class="Procesos-h4 px-3 fst-italic border-bottom mt-5">
       Solución sin subsidio o liquidación.
     </h4>
     <p-divider align="left" type="dashed">
@@ -152,7 +152,7 @@
       </div>
     </p-divider>
 
-    <div class="Procesos-description text-center">
+    <div class="Procesos-description text-center shadow-sm ">
       <p-scrollPanel
         class="p-4"
         [style]="{ width: '100%', height: '700px' }"

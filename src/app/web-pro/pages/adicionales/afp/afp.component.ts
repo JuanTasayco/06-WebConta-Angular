@@ -201,6 +201,20 @@ export class AfpComponent implements OnInit {
         'Para verificar si se agregó el subsidio, verifica presionando el ícono de la persona, luego aparecerá una ventana.',
       urlImage: 'assets/Adicionales/afp/4.2.verificar.png',
     },
+
+    {
+      title: 'Si el monto no es correcto',
+      description:
+        'Si el monto que deseas no es al verificar, puedes editarlo manualmente, para esto ve a planilla MANUAL.',
+      urlImage: 'assets/Adicionales/afp/6.irModSub.png',
+    },
+    {
+      title: 'Colocar el monto manualmente',
+      description:
+        'Primero selecciona el colegio, luego modifica el monto a tu parecer y posteriormente guarda. Luego tendrás que volver a procesar al trabajador desde planilla MENSUAL.',
+      urlImage: 'assets/Adicionales/afp/6.modSub.png',
+    },
+
     {
       title: 'Ir a reportes',
       description:
