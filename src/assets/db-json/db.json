@@ -236,8 +236,13 @@
             "subtitles": "Ir a periodos para habilitar el proceso de gratificación",
             "imagesUrl": "assets/Especiales/Gratificacion/1grati.png"
           },
+
           {
-            "subtitles": "Elegimos la opción planilla y seleccionamos Gratificación ordinaria, posteriormente colocamos el mes 07 para Julio o 12 para Diciembre, y especificamos los rangos de fecha seguir el ejemplo de la imagen",
+            "subtitles": "Seleccionamos el periodo, en este caso Gratificación Ordinaria",
+            "imagesUrl": "assets/Flujo-principal/Periodos/2.seleccionarPeriodo.png"
+          },
+          {
+            "subtitles": "Ahora colocamos el mes 07 para Julio o 12 para Diciembre, si no está incluido puedes agregarlo usando el botón agregar en la esquina superior izquierda, ahora especificamos el rango de fecha a seguir (el rango de 6 meses correspondiente)",
             "imagesUrl": "assets/Especiales/Gratificacion/2grati.png"
           },
           {
