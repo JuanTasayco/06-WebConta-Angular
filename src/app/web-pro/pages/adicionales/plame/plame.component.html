@@ -1,1 +1,87 @@
-<p>plame works!</p>
+<div class="Procesos" appIdDirective>
+  <div
+    class="Procesos-title bg-dark shadow-lg rounded-3 p-5 mt-3 position-relative"
+  >
+    <h2 class="Procesos-h2 Procesos-h2--title fw-bold my-2">Sección PLAME</h2>
+    <p class="fs-5">
+      Los PLAMES son el último paso para cerrar el mes, por lo tanto en este
+      punto las liquidaciones y subsidios ya deberían estar agregadas.
+    </p>
+  </div>
+
+  <div class="Procesos-banner px-5 my-4">
+    <p-timeline [value]="events2" layout="horizontal" align="alternate">
+      <ng-template pTemplate="content" let-event>
+        &#123;&#123;event&#125;&#125;
+      </ng-template>
+      <ng-template pTemplate="opposite" let-event> &nbsp; </ng-template>
+    </p-timeline>
+  </div>
+
+  <div class="Procesos-content mt-5 shadow-lg rounded-3">
+    <!-- section 1 -->
+    <h4 class="Procesos-h4 px-3 fst-italic">Flujo para realizar PLAME</h4>
+    <p-divider align="left" type="dashed">
+      <div class="inline-flex align-items-center">
+        <i class="pi pi-user mr-2"></i> Panel Final PLAME
+      </div>
+    </p-divider>
+    <div class="Procesos-description text-center rounded-3 shadow-sm">
+      <p-scrollPanel
+        class="p-4"
+        [style]="{ width: '100%', height: '700px' }"
+        styleClass="custom"
+      >
+        <div class="contenido my-5" *ngFor="let valor of plameArray">
+          <h5 class="Procesos-h5">{{ valor.title }}</h5>
+          <p class="Procesos-p">{{ valor.description }}</p>
+
+          <p-image
+            [src]="valor.urlImage"
+            alt="Image"
+            width="600"
+            [preview]="true"
+          >
+            <ng-template pTemplate="indicator"> Presiona para Ver </ng-template>
+          </p-image>
+          <p-divider align="right"></p-divider>
+        </div>
+      </p-scrollPanel>
+    </div>
+
+    <!-- alert -->
+    <div class="Procesos-alert p-4 rounded-3 border my-4 bg-light">
+      <figure class="Procesos-figure">
+        <blockquote class="Procesos-blockquote blockquote">
+          <p class="text-dark">Gratificaciones y CTS</p>
+        </blockquote>
+        <figcaption class="Procesos-figcaption blockquote-footer">
+          Recuerda qué en los totales del PLAME se suma automáticamente la CTS y
+          la GRATI, mientras que por otro lado el sistema tiene ambos reportes
+          separados (líquidos), así que para poder hacer la comparación
+          necesitas tener los montos CTS/GRATI y sumarlos a los líquidos del
+          mes, finalmente comparar con la data que arrojó el PLAME.
+        </figcaption>
+      </figure>
+    </div>
+
+    <!--  -->
+
+    <h4 class="Procesos-h4 px-3 fst-italic border-bottom mt-5">
+      Si no te cuadra la afp, no puedes hacer el PLAME
+    </h4>
+
+    <div class="Procesos-alert p-4 rounded-3 border mb-4 bg-light">
+      <figure class="Procesos-figure">
+        <blockquote class="Procesos-blockquote blockquote">
+          <p class="text-dark">Qué pasa si no me cuadra la AFP?</p>
+        </blockquote>
+        <figcaption class="Procesos-figcaption blockquote-footer">
+          Es probable que se haya pedido un cambio en la planilla incluso
+          después de hacerse la AFP, razón por la cuál se borraron estos datos,
+          debes volver a agregarlos.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
